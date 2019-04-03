@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+	int cm,pit;
+	double in;
+	const double CM_PER_INCH = 2.54;
+	const int INCH_PER_PIT = 12;
+	
+	printf("키를 입력하시오(cm):");
+	scanf("%d", &cm);
+
+	in = cm / CM_PER_INCH;
+	pit = in - ((int)in / INCH_PER_PIT)*INCH_PER_PIT;
+
+	printf("%d cm는 %d피트 %lf인치입니다.",cm,pit,in);
+
+	return 0;
+}
