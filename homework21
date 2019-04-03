@@ -11,9 +11,10 @@ int main()
 	scanf("%d", &cm);
 
 	in = cm / CM_PER_INCH;
-	pit = in - ((int)in / INCH_PER_PIT)*INCH_PER_PIT;
+	pit = in/INCH_PER_PIT;
 
 	printf("%d cm는 %d피트 %lf인치입니다.",cm,pit,in);
+
 
 	return 0;
 }
